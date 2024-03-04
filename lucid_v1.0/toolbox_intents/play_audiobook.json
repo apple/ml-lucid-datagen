@@ -1,0 +1,46 @@
+{
+    "command": "play_audiobook",
+    "args": {
+        "title": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "author": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "narrator": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "duration": {
+            "type": "str",
+            "optional": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "chapter": {
+            "type": "int",
+            "optional": true
+        },
+        "speed": {
+            "type": "float",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "play an audiobook",
+    "entity_name": "audiobooks",
+    "domain": "music_podcasts_and_audiobooks"
+}

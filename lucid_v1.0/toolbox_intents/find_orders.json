@@ -1,0 +1,42 @@
+{
+    "command": "find_orders",
+    "args": {
+        "restaurant": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "menu_item": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "quantity": {
+            "type": "int",
+            "optional": true
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_orders": {
+            "type": "str",
+            "optional": false
+        },
+        "delivery_address": {
+            "type": "str",
+            "optional": true
+        },
+        "payment_method": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing orders",
+    "entity_name": "orders",
+    "domain": [
+        "food_and_drink"
+    ],
+    "query_intent": true
+}

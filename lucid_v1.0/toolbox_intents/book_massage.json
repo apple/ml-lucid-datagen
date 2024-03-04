@@ -1,0 +1,39 @@
+{
+    "command": "book_massage",
+    "args": {
+        "type": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "duration": {
+            "type": "str",
+            "optional": false
+        },
+        "therapist_gender": {
+            "type": "str",
+            "optional": true
+        },
+        "additional_services": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a massage",
+    "entity_name": "massages",
+    "domain": "health_hair_and_beauty"
+}

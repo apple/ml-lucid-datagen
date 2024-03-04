@@ -1,0 +1,21 @@
+{
+    "command": "find_blocked_senders",
+    "args": {
+        "sender": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_blocked_senders": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing blocked_senders",
+    "entity_name": "blocked_senders",
+    "domain": [
+        "messages_and_emails"
+    ],
+    "query_intent": true
+}

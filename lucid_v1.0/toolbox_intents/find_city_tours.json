@@ -1,0 +1,43 @@
+{
+    "command": "find_city_tours",
+    "args": {
+        "tour_type": {
+            "type": "str",
+            "optional": true
+        },
+        "number_of_people": {
+            "type": "int",
+            "optional": true
+        },
+        "duration": {
+            "type": "str",
+            "optional": true
+        },
+        "pickup_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "dropoff_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_city_tours": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing city_tours",
+    "entity_name": "city_tours",
+    "domain": [
+        "travel"
+    ],
+    "query_intent": true
+}

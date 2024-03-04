@@ -1,0 +1,20 @@
+{
+    "command": "find_volume",
+    "args": {
+        "volume_level": {
+            "type": "int",
+            "optional": true
+        },
+        "date_of_volume": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing volume",
+    "entity_name": "volume",
+    "domain": [
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

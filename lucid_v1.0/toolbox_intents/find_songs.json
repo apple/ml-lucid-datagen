@@ -1,0 +1,40 @@
+{
+    "command": "find_songs",
+    "args": {
+        "song_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "artist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "album": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "shuffle": {
+            "type": "bool",
+            "optional": true
+        },
+        "date_of_songs": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing songs",
+    "entity_name": "songs",
+    "domain": [
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

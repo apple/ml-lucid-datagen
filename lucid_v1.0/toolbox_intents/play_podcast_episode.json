@@ -1,0 +1,32 @@
+{
+    "command": "play_podcast_episode",
+    "args": {
+        "episode_title": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "podcast_title": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "episode_number": {
+            "type": "int",
+            "optional": true
+        },
+        "podcast_genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playback_speed": {
+            "type": "float",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "play a podcast episode",
+    "entity_name": "podcast_episodes",
+    "domain": "music_podcasts_and_audiobooks"
+}

@@ -1,0 +1,39 @@
+{
+    "command": "book_hotel_room",
+    "args": {
+        "location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "check_in_date": {
+            "type": "str",
+            "optional": false
+        },
+        "check_out_date": {
+            "type": "str",
+            "optional": false
+        },
+        "number_of_guests": {
+            "type": "int",
+            "optional": false
+        },
+        "number_of_rooms": {
+            "type": "int",
+            "optional": false
+        },
+        "room_type": {
+            "type": "str",
+            "optional": false
+        },
+        "smoking_preference": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a hotel room",
+    "entity_name": "hotel_rooms",
+    "domain": "travel"
+}

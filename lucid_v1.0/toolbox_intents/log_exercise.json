@@ -1,0 +1,30 @@
+{
+    "command": "log_exercise",
+    "args": {
+        "exercise_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": false
+        },
+        "calories_burned": {
+            "type": "int",
+            "optional": false
+        },
+        "date": {
+            "type": "str",
+            "optional": true
+        },
+        "notes": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "log exercise",
+    "entity_name": "exercises",
+    "domain": "exercise"
+}

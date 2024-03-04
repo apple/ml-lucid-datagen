@@ -1,0 +1,38 @@
+{
+    "command": "create_workout_regime",
+    "args": {
+        "workout_name": {
+            "type": "str",
+            "optional": false
+        },
+        "exercise_type": {
+            "type": "str",
+            "optional": false
+        },
+        "duration": {
+            "type": "int",
+            "optional": false
+        },
+        "difficulty": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "equipment_needed": {
+            "type": "str",
+            "optional": true
+        },
+        "rest_time": {
+            "type": "int",
+            "optional": true
+        },
+        "start_date": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "create a workout regime",
+    "entity_name": "workouts",
+    "domain": "exercise"
+}

@@ -1,0 +1,39 @@
+{
+    "command": "find_triathlons",
+    "args": {
+        "type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "participants": {
+            "type": "int",
+            "optional": true
+        },
+        "equipment": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "training_plan": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_triathlons": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing triathlons",
+    "entity_name": "triathlons",
+    "domain": [
+        "exercise"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,38 @@
+{
+    "command": "find_coffee_orders",
+    "args": {
+        "coffee_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "size": {
+            "type": "str",
+            "optional": true
+        },
+        "milk_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "sugar": {
+            "type": "int",
+            "optional": true
+        },
+        "extra_options": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_coffee_orders": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing coffee_orders",
+    "entity_name": "coffee_orders",
+    "domain": [
+        "food_and_drink"
+    ],
+    "query_intent": true
+}

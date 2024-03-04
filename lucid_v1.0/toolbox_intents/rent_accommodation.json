@@ -1,0 +1,40 @@
+{
+    "command": "rent_accommodation",
+    "args": {
+        "location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "check_in_date": {
+            "type": "str",
+            "optional": false
+        },
+        "check_out_date": {
+            "type": "str",
+            "optional": false
+        },
+        "number_of_guests": {
+            "type": "int",
+            "optional": false
+        },
+        "amenities": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "property_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "price_range": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "rent accommodation",
+    "entity_name": "accommodations",
+    "domain": "travel"
+}

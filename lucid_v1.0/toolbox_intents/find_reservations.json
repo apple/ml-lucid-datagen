@@ -1,0 +1,33 @@
+{
+    "command": "find_reservations",
+    "args": {
+        "restaurant_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "party_size": {
+            "type": "int",
+            "optional": true
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        },
+        "contact_number": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_reservations": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing reservations",
+    "entity_name": "reservations",
+    "domain": [
+        "food_and_drink"
+    ],
+    "query_intent": true
+}

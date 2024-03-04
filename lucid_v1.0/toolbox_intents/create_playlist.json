@@ -1,0 +1,36 @@
+{
+    "command": "create_playlist",
+    "args": {
+        "playlist_name": {
+            "type": "str",
+            "optional": false
+        },
+        "playlist_description": {
+            "type": "str",
+            "optional": true
+        },
+        "playlist_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist_visibility": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist_genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist_length": {
+            "type": "int",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "create a playlist",
+    "entity_name": "playlists",
+    "domain": "music_podcasts_and_audiobooks"
+}

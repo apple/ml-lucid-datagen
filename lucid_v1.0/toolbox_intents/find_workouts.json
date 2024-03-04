@@ -1,0 +1,37 @@
+{
+    "command": "find_workouts",
+    "args": {
+        "workout_name": {
+            "type": "str",
+            "optional": true
+        },
+        "exercise_type": {
+            "type": "str",
+            "optional": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "difficulty": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "equipment_needed": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_workouts": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing workouts",
+    "entity_name": "workouts",
+    "domain": [
+        "exercise"
+    ],
+    "query_intent": true
+}

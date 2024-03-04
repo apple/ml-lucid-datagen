@@ -1,0 +1,37 @@
+{
+    "command": "find_bills",
+    "args": {
+        "bill_amount": {
+            "type": "int",
+            "optional": true
+        },
+        "bill_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "payment_method": {
+            "type": "str",
+            "optional": true
+        },
+        "account_number": {
+            "type": "str",
+            "optional": true
+        },
+        "reference_code": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_bills": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing bills",
+    "entity_name": "bills",
+    "domain": [
+        "payment"
+    ],
+    "query_intent": true
+}

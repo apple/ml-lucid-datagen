@@ -1,0 +1,13 @@
+{
+    "command": "set_volume",
+    "args": {
+        "volume_level": {
+            "type": "int",
+            "optional": false
+        }
+    },
+    "confirmation_required": true,
+    "description": "Set the volume",
+    "entity_name": "volume",
+    "domain": "music_podcasts_and_audiobooks"
+}

@@ -1,0 +1,53 @@
+{
+    "command": "find_audiobooks",
+    "args": {
+        "title": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "author": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "narrator": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "duration": {
+            "type": "str",
+            "optional": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "chapter": {
+            "type": "int",
+            "optional": true
+        },
+        "speed": {
+            "type": "float",
+            "optional": true
+        },
+        "date_of_audiobooks": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing audiobooks",
+    "entity_name": "audiobooks",
+    "domain": [
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

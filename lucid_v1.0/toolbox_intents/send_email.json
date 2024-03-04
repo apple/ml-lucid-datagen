@@ -1,0 +1,26 @@
+{
+    "command": "send_email",
+    "args": {
+        "recipient": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "subject": {
+            "type": "str",
+            "optional": false
+        },
+        "message_body": {
+            "type": "str",
+            "optional": false
+        },
+        "attachment": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "send an email",
+    "entity_name": "emails",
+    "domain": "messages_and_emails"
+}

@@ -1,0 +1,43 @@
+{
+    "command": "find_flights",
+    "args": {
+        "origin": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "destination": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "passengers": {
+            "type": "int",
+            "optional": true
+        },
+        "class": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "cabin_baggage": {
+            "type": "bool",
+            "optional": true
+        },
+        "checked_baggage": {
+            "type": "bool",
+            "optional": true
+        },
+        "date_of_flights": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing flights",
+    "entity_name": "flights",
+    "domain": [
+        "transportation"
+    ],
+    "query_intent": true
+}

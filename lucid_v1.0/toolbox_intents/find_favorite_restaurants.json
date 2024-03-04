@@ -1,0 +1,38 @@
+{
+    "command": "find_favorite_restaurants",
+    "args": {
+        "restaurant_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "restaurant_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "cuisine_type": {
+            "type": "str",
+            "optional": true
+        },
+        "restaurant_rating": {
+            "type": "float",
+            "optional": true
+        },
+        "restaurant_hours": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_favorite_restaurants": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing favorite_restaurants",
+    "entity_name": "favorite_restaurants",
+    "domain": [
+        "food_and_drink"
+    ],
+    "query_intent": true
+}

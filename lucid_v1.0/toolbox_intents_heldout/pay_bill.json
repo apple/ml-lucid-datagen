@@ -1,0 +1,34 @@
+{
+    "command": "pay_bill",
+    "args": {
+        "bill_amount": {
+            "type": "int",
+            "optional": false
+        },
+        "bill_type": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "payment_method": {
+            "type": "str",
+            "optional": false
+        },
+        "due_date": {
+            "type": "str",
+            "optional": false
+        },
+        "account_number": {
+            "type": "str",
+            "optional": true
+        },
+        "reference_code": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "pay a bill",
+    "entity_name": "bills",
+    "domain": "payment"
+}

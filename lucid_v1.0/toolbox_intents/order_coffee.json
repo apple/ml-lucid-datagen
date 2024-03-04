@@ -1,0 +1,35 @@
+{
+    "command": "order_coffee",
+    "args": {
+        "coffee_type": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "size": {
+            "type": "str",
+            "optional": false
+        },
+        "milk_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "sugar": {
+            "type": "int",
+            "optional": true
+        },
+        "extra_options": {
+            "type": "str",
+            "optional": true
+        },
+        "pickup_time": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "order coffee",
+    "entity_name": "coffee_orders",
+    "domain": "food_and_drink"
+}

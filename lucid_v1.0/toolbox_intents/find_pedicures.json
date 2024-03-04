@@ -1,0 +1,37 @@
+{
+    "command": "find_pedicures",
+    "args": {
+        "service_type": {
+            "type": "str",
+            "optional": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "therapist_gender": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "additional_services": {
+            "type": "str",
+            "optional": true
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_pedicures": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing pedicures",
+    "entity_name": "pedicures",
+    "domain": [
+        "health_hair_and_beauty"
+    ],
+    "query_intent": true
+}

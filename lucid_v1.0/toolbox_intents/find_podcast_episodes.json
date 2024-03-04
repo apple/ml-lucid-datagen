@@ -1,0 +1,39 @@
+{
+    "command": "find_podcast_episodes",
+    "args": {
+        "episode_title": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "podcast_title": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "episode_number": {
+            "type": "int",
+            "optional": true
+        },
+        "podcast_genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playback_speed": {
+            "type": "float",
+            "optional": true
+        },
+        "date_of_podcast_episodes": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing podcast_episodes",
+    "entity_name": "podcast_episodes",
+    "domain": [
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

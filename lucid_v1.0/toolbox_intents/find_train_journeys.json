@@ -1,0 +1,38 @@
+{
+    "command": "find_train_journeys",
+    "args": {
+        "origin": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "destination": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "passenger_count": {
+            "type": "int",
+            "optional": true
+        },
+        "seat_preference": {
+            "type": "str",
+            "optional": true
+        },
+        "luggage": {
+            "type": "bool",
+            "optional": true
+        },
+        "date_of_train_journeys": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing train_journeys",
+    "entity_name": "train_journeys",
+    "domain": [
+        "transportation"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,27 @@
+{
+    "command": "add_tv_program_to_favorites",
+    "args": {
+        "program_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "channel_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "start_time": {
+            "type": "str",
+            "optional": false
+        },
+        "end_time": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": true,
+    "description": "Add a TV program to favourites",
+    "entity_name": "favorites",
+    "domain": "television_and_film"
+}

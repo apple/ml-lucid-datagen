@@ -1,0 +1,21 @@
+pipeline:
+  - stage: GenerateRequestPath
+    dependency:
+      - GenerateAppIntent
+      - GenerateAppIntentValues
+  - stage: GenerateFullIntents
+    dependency:
+      - GenerateRequestPath
+  - stage: GenerateConversationRules
+    dependency:
+      - GenerateAppIntent
+      - GenerateAppIntentValues
+      - GenerateRequestPath
+      - GenerateFullIntents
+  - stage: SSAConversation
+    dependency:
+      - GenerateAppIntent
+      - GenerateAppIntentValues
+      - GenerateRequestPath
+      - GenerateFullIntents
+      - GenerateConversationRules

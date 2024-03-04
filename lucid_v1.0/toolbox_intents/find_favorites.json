@@ -1,0 +1,32 @@
+{
+    "command": "find_favorites",
+    "args": {
+        "program_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "channel_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_favorites": {
+            "type": "str",
+            "optional": false
+        },
+        "artist_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing favorites",
+    "entity_name": "favorites",
+    "domain": [
+        "television_and_film",
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

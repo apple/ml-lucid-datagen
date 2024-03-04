@@ -1,0 +1,40 @@
+{
+    "command": "book_triathlon",
+    "args": {
+        "type": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "participants": {
+            "type": "int",
+            "optional": true
+        },
+        "equipment": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "training_plan": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a triathlon",
+    "entity_name": "triathlons",
+    "domain": "exercise"
+}

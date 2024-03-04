@@ -1,0 +1,33 @@
+{
+    "command": "play_song",
+    "args": {
+        "song_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "artist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "album": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "shuffle": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "play a song",
+    "entity_name": "songs",
+    "domain": "music_podcasts_and_audiobooks"
+}

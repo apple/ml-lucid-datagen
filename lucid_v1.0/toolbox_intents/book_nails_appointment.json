@@ -1,0 +1,35 @@
+{
+    "command": "book_nails_appointment",
+    "args": {
+        "appointment_date": {
+            "type": "str",
+            "optional": false
+        },
+        "appointment_time": {
+            "type": "str",
+            "optional": false
+        },
+        "salon_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "nail_technician": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "nail_service_type": {
+            "type": "str",
+            "optional": true
+        },
+        "additional_services": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book appointment to do nails",
+    "entity_name": "appointments",
+    "domain": "health_hair_and_beauty"
+}

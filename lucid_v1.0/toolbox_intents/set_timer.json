@@ -1,0 +1,22 @@
+{
+    "command": "set_timer",
+    "args": {
+        "duration": {
+            "type": "str",
+            "optional": false
+        },
+        "label": {
+            "type": "str",
+            "optional": true
+        },
+        "ringtone": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "set a timer",
+    "entity_name": "alarms",
+    "domain": "clocks_and_alarms"
+}

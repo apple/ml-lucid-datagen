@@ -1,0 +1,44 @@
+{
+    "command": "book_cruise",
+    "args": {
+        "cruise_line": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "destination": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "departure_date": {
+            "type": "str",
+            "optional": false
+        },
+        "number_of_passengers": {
+            "type": "int",
+            "optional": false
+        },
+        "cabin_type": {
+            "type": "str",
+            "optional": true
+        },
+        "cabin_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "booking_agent": {
+            "type": "str",
+            "optional": true
+        },
+        "booking_time": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a cruise",
+    "entity_name": "cruises",
+    "domain": "travel"
+}

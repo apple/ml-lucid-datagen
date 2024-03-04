@@ -1,0 +1,39 @@
+{
+    "command": "find_reviews",
+    "args": {
+        "restaurant_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "rating": {
+            "type": "float",
+            "optional": true
+        },
+        "review_text": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_reviews": {
+            "type": "str",
+            "optional": false
+        },
+        "film_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "spoiler_alert": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing reviews",
+    "entity_name": "reviews",
+    "domain": [
+        "food_and_drink",
+        "food_and_drink"
+    ],
+    "query_intent": true
+}

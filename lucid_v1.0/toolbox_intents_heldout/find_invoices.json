@@ -1,0 +1,38 @@
+{
+    "command": "find_invoices",
+    "args": {
+        "recipient": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "amount": {
+            "type": "float",
+            "optional": true
+        },
+        "description": {
+            "type": "str",
+            "optional": true
+        },
+        "currency": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "attachment": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_invoices": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing invoices",
+    "entity_name": "invoices",
+    "domain": [
+        "payment"
+    ],
+    "query_intent": true
+}

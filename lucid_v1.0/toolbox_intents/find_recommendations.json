@@ -1,0 +1,44 @@
+{
+    "command": "find_recommendations",
+    "args": {
+        "genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "mood": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "artist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "year": {
+            "type": "int",
+            "optional": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_recommendations": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing recommendations",
+    "entity_name": "recommendations",
+    "domain": [
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

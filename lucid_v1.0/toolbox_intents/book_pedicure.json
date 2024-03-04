@@ -1,0 +1,38 @@
+{
+    "command": "book_pedicure",
+    "args": {
+        "service_type": {
+            "type": "str",
+            "optional": false
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "therapist_gender": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "additional_services": {
+            "type": "str",
+            "optional": true
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a pedicure",
+    "entity_name": "pedicures",
+    "domain": "health_hair_and_beauty"
+}

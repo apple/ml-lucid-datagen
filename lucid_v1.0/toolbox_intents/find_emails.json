@@ -1,0 +1,33 @@
+{
+    "command": "find_emails",
+    "args": {
+        "recipient": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "subject": {
+            "type": "str",
+            "optional": true
+        },
+        "message_body": {
+            "type": "str",
+            "optional": true
+        },
+        "attachment": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_emails": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing emails",
+    "entity_name": "emails",
+    "domain": [
+        "messages_and_emails"
+    ],
+    "query_intent": true
+}

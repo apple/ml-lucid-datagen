@@ -1,0 +1,48 @@
+{
+    "command": "find_films",
+    "args": {
+        "film_title": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "streaming_service": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "actor": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "release_year": {
+            "type": "int",
+            "optional": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_films": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing films",
+    "entity_name": "films",
+    "domain": [
+        "television_and_film"
+    ],
+    "query_intent": true
+}

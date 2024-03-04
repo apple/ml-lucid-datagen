@@ -1,0 +1,34 @@
+{
+    "command": "reserve_table",
+    "args": {
+        "restaurant_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "party_size": {
+            "type": "int",
+            "optional": false
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        },
+        "contact_number": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "reserve a table",
+    "entity_name": "reservations",
+    "domain": "food_and_drink"
+}

@@ -1,0 +1,39 @@
+{
+    "command": "find_accommodations",
+    "args": {
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "number_of_guests": {
+            "type": "int",
+            "optional": true
+        },
+        "amenities": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "property_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "price_range": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_accommodations": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing accommodations",
+    "entity_name": "accommodations",
+    "domain": [
+        "travel"
+    ],
+    "query_intent": true
+}

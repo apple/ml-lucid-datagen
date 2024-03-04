@@ -1,0 +1,37 @@
+{
+    "command": "find_payment_cards",
+    "args": {
+        "card_number": {
+            "type": "str",
+            "optional": true
+        },
+        "cvv": {
+            "type": "str",
+            "optional": true
+        },
+        "cardholder_name": {
+            "type": "str",
+            "optional": true
+        },
+        "billing_address": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "phone_number": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_payment_cards": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing payment_cards",
+    "entity_name": "payment_cards",
+    "domain": [
+        "payment"
+    ],
+    "query_intent": true
+}

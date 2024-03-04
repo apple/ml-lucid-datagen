@@ -1,0 +1,39 @@
+{
+    "command": "rent_car",
+    "args": {
+        "pickup_location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "dropoff_location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "pickup_date": {
+            "type": "str",
+            "optional": false
+        },
+        "dropoff_date": {
+            "type": "str",
+            "optional": false
+        },
+        "car_type": {
+            "type": "str",
+            "optional": false
+        },
+        "driver_age": {
+            "type": "int",
+            "optional": true
+        },
+        "insurance": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "rent a car",
+    "domain": "travel",
+    "entity_name": "cars"
+}

@@ -1,0 +1,33 @@
+{
+    "command": "add_song_to_favorites",
+    "args": {
+        "song_title": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "artist_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "album_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "year": {
+            "type": "int",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "add a song to favorites",
+    "entity_name": "songs",
+    "domain": "music_podcasts_and_audiobooks"
+}

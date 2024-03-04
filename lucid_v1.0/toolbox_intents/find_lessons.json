@@ -1,0 +1,35 @@
+{
+    "command": "find_lessons",
+    "args": {
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "instructor": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "level": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_lessons": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing lessons",
+    "entity_name": "lessons",
+    "domain": [
+        "exercise"
+    ],
+    "query_intent": true
+}

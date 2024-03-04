@@ -1,0 +1,29 @@
+{
+    "command": "find_favourite_pages",
+    "args": {
+        "page_name": {
+            "type": "str",
+            "optional": true
+        },
+        "page_url": {
+            "type": "str",
+            "optional": true
+        },
+        "category": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_favourite_pages": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing favourite_pages",
+    "entity_name": "favourite_pages",
+    "domain": [
+        "internet"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,38 @@
+{
+    "command": "find_massages",
+    "args": {
+        "type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "duration": {
+            "type": "str",
+            "optional": true
+        },
+        "therapist_gender": {
+            "type": "str",
+            "optional": true
+        },
+        "additional_services": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_massages": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing massages",
+    "entity_name": "massages",
+    "domain": [
+        "health_hair_and_beauty"
+    ],
+    "query_intent": true
+}

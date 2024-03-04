@@ -1,0 +1,38 @@
+{
+    "command": "find_guides",
+    "args": {
+        "destination": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true
+        },
+        "number_of_travelers": {
+            "type": "int",
+            "optional": true
+        },
+        "transportation": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "budget": {
+            "type": "float",
+            "optional": true
+        },
+        "date_of_guides": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing guides",
+    "entity_name": "guides",
+    "domain": [
+        "travel"
+    ],
+    "query_intent": true
+}

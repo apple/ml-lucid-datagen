@@ -1,0 +1,27 @@
+{
+    "command": "order_takeaway",
+    "args": {
+        "restaurant": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "menu_item": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "quantity": {
+            "type": "int",
+            "optional": false
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "order takeaway",
+    "entity_name": "orders",
+    "domain": "food_and_drink"
+}

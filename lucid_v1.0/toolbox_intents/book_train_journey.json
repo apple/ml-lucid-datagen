@@ -1,0 +1,47 @@
+{
+    "command": "book_train_journey",
+    "args": {
+        "origin": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "destination": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "departure_date": {
+            "type": "str",
+            "optional": false
+        },
+        "departure_time": {
+            "type": "str",
+            "optional": false
+        },
+        "passenger_count": {
+            "type": "int",
+            "optional": true
+        },
+        "return_date": {
+            "type": "str",
+            "optional": true
+        },
+        "return_time": {
+            "type": "str",
+            "optional": true
+        },
+        "seat_preference": {
+            "type": "str",
+            "optional": true
+        },
+        "luggage": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a train journey",
+    "entity_name": "train_journeys",
+    "domain": "transportation"
+}

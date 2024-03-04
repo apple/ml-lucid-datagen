@@ -1,0 +1,28 @@
+{
+    "command": "find_notes",
+    "args": {
+        "title": {
+            "type": "str",
+            "optional": true
+        },
+        "content": {
+            "type": "str",
+            "optional": true
+        },
+        "reminder": {
+            "type": "bool",
+            "optional": true
+        },
+        "date_of_notes": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing notes",
+    "entity_name": "notes",
+    "domain": [
+        "reminders_and_notes"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,39 @@
+{
+    "command": "book_guide",
+    "args": {
+        "destination": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "language": {
+            "type": "str",
+            "optional": false
+        },
+        "number_of_travelers": {
+            "type": "int",
+            "optional": false
+        },
+        "start_date": {
+            "type": "str",
+            "optional": false
+        },
+        "end_date": {
+            "type": "str",
+            "optional": false
+        },
+        "transportation": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "budget": {
+            "type": "float",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a guide",
+    "entity_name": "guides",
+    "domain": "travel"
+}

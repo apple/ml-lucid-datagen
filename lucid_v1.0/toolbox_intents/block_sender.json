@@ -1,0 +1,14 @@
+{
+    "command": "block_sender",
+    "args": {
+        "sender": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "block a sender",
+    "entity_name": "blocked_senders",
+    "domain": "messages_and_emails"
+}

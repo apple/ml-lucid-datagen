@@ -1,0 +1,35 @@
+{
+    "command": "send_invoice",
+    "args": {
+        "recipient": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "amount": {
+            "type": "float",
+            "optional": false
+        },
+        "due_date": {
+            "type": "str",
+            "optional": true
+        },
+        "description": {
+            "type": "str",
+            "optional": true
+        },
+        "currency": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "attachment": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "send an invoice",
+    "entity_name": "invoices",
+    "domain": "payment"
+}

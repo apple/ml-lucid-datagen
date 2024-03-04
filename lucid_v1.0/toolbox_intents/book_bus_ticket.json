@@ -1,0 +1,39 @@
+{
+    "command": "book_bus_ticket",
+    "args": {
+        "destination": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "origin": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "number_of_passengers": {
+            "type": "int",
+            "optional": false
+        },
+        "departure_date": {
+            "type": "str",
+            "optional": false
+        },
+        "return_date": {
+            "type": "str",
+            "optional": true
+        },
+        "seat_type": {
+            "type": "str",
+            "optional": true
+        },
+        "booking_time": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a bus ticket",
+    "entity_name": "bus_tickets",
+    "domain": "transportation"
+}

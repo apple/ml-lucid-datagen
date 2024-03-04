@@ -1,0 +1,44 @@
+{
+    "command": "book_city_tour",
+    "args": {
+        "tour_type": {
+            "type": "str",
+            "optional": false
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "number_of_people": {
+            "type": "int",
+            "optional": false
+        },
+        "duration": {
+            "type": "str",
+            "optional": true
+        },
+        "pickup_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "dropoff_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a city tour",
+    "entity_name": "city_tours",
+    "domain": "travel"
+}

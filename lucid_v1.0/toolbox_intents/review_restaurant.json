@@ -1,0 +1,26 @@
+{
+    "command": "review_restaurant",
+    "args": {
+        "restaurant_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "rating": {
+            "type": "float",
+            "optional": false
+        },
+        "review_text": {
+            "type": "str",
+            "optional": true
+        },
+        "date_visited": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "review a restaurant",
+    "entity_name": "reviews",
+    "domain": "food_and_drink"
+}

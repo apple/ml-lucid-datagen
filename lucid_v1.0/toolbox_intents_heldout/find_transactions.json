@@ -1,0 +1,34 @@
+{
+    "command": "find_transactions",
+    "args": {
+        "amount": {
+            "type": "int",
+            "optional": true
+        },
+        "recipient": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "account_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "reference": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_transactions": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing transactions",
+    "entity_name": "transactions",
+    "domain": [
+        "payment"
+    ],
+    "query_intent": true
+}

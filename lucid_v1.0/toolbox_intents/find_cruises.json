@@ -1,0 +1,43 @@
+{
+    "command": "find_cruises",
+    "args": {
+        "cruise_line": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "destination": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "number_of_passengers": {
+            "type": "int",
+            "optional": true
+        },
+        "cabin_type": {
+            "type": "str",
+            "optional": true
+        },
+        "cabin_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "booking_agent": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_cruises": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing cruises",
+    "entity_name": "cruises",
+    "domain": [
+        "travel"
+    ],
+    "query_intent": true
+}

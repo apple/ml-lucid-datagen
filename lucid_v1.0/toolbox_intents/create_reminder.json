@@ -1,0 +1,25 @@
+{
+    "command": "create_reminder",
+    "args": {
+        "title": {
+            "type": "str",
+            "optional": false
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "notes": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "create a reminder",
+    "entity_name": "reminders",
+    "domain": "reminders_and_notes"
+}

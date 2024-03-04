@@ -1,0 +1,44 @@
+{
+    "command": "book_flight",
+    "args": {
+        "origin": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "destination": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "departure_date": {
+            "type": "str",
+            "optional": false
+        },
+        "return_date": {
+            "type": "str",
+            "optional": true
+        },
+        "passengers": {
+            "type": "int",
+            "optional": false
+        },
+        "class": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "cabin_baggage": {
+            "type": "bool",
+            "optional": true
+        },
+        "checked_baggage": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a flight",
+    "entity_name": "flights",
+    "domain": "transportation"
+}

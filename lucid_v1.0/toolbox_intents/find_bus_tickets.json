@@ -1,0 +1,34 @@
+{
+    "command": "find_bus_tickets",
+    "args": {
+        "destination": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "origin": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "number_of_passengers": {
+            "type": "int",
+            "optional": true
+        },
+        "seat_type": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_bus_tickets": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing bus_tickets",
+    "entity_name": "bus_tickets",
+    "domain": [
+        "transportation"
+    ],
+    "query_intent": true
+}

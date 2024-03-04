@@ -1,0 +1,22 @@
+{
+    "command": "send_message",
+    "args": {
+        "recipient": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "message_body": {
+            "type": "str",
+            "optional": false
+        },
+        "attachment": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "send a message",
+    "entity_name": "messages",
+    "domain": "messages_and_emails"
+}

@@ -1,0 +1,31 @@
+{
+    "command": "book_taxi",
+    "args": {
+        "destination": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "origin": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "passenger_count": {
+            "type": "int",
+            "optional": true
+        },
+        "pickup_time": {
+            "type": "str",
+            "optional": true
+        },
+        "luggage": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a taxi",
+    "entity_name": "taxis",
+    "domain": "transportation"
+}

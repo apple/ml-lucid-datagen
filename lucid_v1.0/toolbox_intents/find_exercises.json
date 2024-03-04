@@ -1,0 +1,33 @@
+{
+    "command": "find_exercises",
+    "args": {
+        "exercise_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "calories_burned": {
+            "type": "int",
+            "optional": true
+        },
+        "notes": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_exercises": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing exercises",
+    "entity_name": "exercises",
+    "domain": [
+        "exercise"
+    ],
+    "query_intent": true
+}

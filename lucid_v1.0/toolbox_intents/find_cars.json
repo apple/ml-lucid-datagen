@@ -1,0 +1,38 @@
+{
+    "command": "find_cars",
+    "args": {
+        "pickup_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "dropoff_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "car_type": {
+            "type": "str",
+            "optional": true
+        },
+        "driver_age": {
+            "type": "int",
+            "optional": true
+        },
+        "insurance": {
+            "type": "bool",
+            "optional": true
+        },
+        "date_of_cars": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing cars",
+    "domain": [
+        "travel"
+    ],
+    "entity_name": "cars",
+    "query_intent": true
+}

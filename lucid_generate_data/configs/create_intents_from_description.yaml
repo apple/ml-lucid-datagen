@@ -1,0 +1,8 @@
+pipeline:
+  - stage: GenerateAppIntent
+    dependency:
+      - GenerateAppIntentDescription
+  - stage: GenerateAppIntentValues
+    dependency:
+      - GenerateAppIntentDescription
+      - GenerateAppIntent

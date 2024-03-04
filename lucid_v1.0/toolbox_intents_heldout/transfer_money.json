@@ -1,0 +1,27 @@
+{
+    "command": "transfer_money",
+    "args": {
+        "amount": {
+            "type": "int",
+            "optional": false
+        },
+        "recipient": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "account_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "reference": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "transfer money",
+    "entity_name": "transactions",
+    "domain": "payment"
+}

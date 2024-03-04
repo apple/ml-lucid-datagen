@@ -1,0 +1,38 @@
+{
+    "command": "find_hotel_rooms",
+    "args": {
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "number_of_guests": {
+            "type": "int",
+            "optional": true
+        },
+        "number_of_rooms": {
+            "type": "int",
+            "optional": true
+        },
+        "room_type": {
+            "type": "str",
+            "optional": true
+        },
+        "smoking_preference": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_hotel_rooms": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing hotel_rooms",
+    "entity_name": "hotel_rooms",
+    "domain": [
+        "travel"
+    ],
+    "query_intent": true
+}

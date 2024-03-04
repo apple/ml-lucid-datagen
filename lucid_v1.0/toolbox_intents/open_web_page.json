@@ -1,0 +1,19 @@
+{
+    "command": "open_web_page",
+    "args": {
+        "url": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "browser": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "open an internet page in a web browser",
+    "entity_name": "web_pages",
+    "domain": "internet"
+}

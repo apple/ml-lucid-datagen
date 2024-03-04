@@ -1,0 +1,30 @@
+{
+    "command": "order_supermarket_shop",
+    "args": {
+        "items": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "delivery_address": {
+            "type": "str",
+            "optional": false
+        },
+        "payment_method": {
+            "type": "str",
+            "optional": false
+        },
+        "delivery_time": {
+            "type": "str",
+            "optional": true
+        },
+        "special_instructions": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "order supermarket shop",
+    "entity_name": "orders",
+    "domain": "food_and_drink"
+}

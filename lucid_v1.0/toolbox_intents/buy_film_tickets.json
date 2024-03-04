@@ -1,0 +1,32 @@
+{
+    "command": "buy_film_tickets",
+    "args": {
+        "film_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "theater_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "number_of_tickets": {
+            "type": "int",
+            "optional": false
+        },
+        "showtime": {
+            "type": "str",
+            "optional": true
+        },
+        "seat_preference": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "buy film tickets",
+    "entity_name": "film_tickets",
+    "domain": "television_and_film"
+}

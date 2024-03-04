@@ -1,0 +1,29 @@
+{
+    "command": "find_messages",
+    "args": {
+        "recipient": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "message_body": {
+            "type": "str",
+            "optional": true
+        },
+        "attachment": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_messages": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing messages",
+    "entity_name": "messages",
+    "domain": [
+        "messages_and_emails"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,30 @@
+{
+    "command": "add_event",
+    "args": {
+        "event_title": {
+            "type": "str",
+            "optional": false
+        },
+        "event_location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "event_date": {
+            "type": "str",
+            "optional": false
+        },
+        "event_time": {
+            "type": "str",
+            "optional": false
+        },
+        "event_description": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "add an event to the calendar",
+    "entity_name": "events",
+    "domain": "calendar"
+}

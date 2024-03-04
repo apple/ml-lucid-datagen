@@ -1,0 +1,37 @@
+{
+    "command": "make_song_recommendation",
+    "args": {
+        "genre": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "mood": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "artist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "year": {
+            "type": "int",
+            "optional": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "make song recommendation",
+    "entity_name": "recommendations",
+    "domain": "music_podcasts_and_audiobooks"
+}

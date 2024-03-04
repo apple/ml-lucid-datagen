@@ -1,0 +1,33 @@
+{
+    "command": "find_direct_debits",
+    "args": {
+        "amount": {
+            "type": "str",
+            "optional": true
+        },
+        "recipient": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "bank_account": {
+            "type": "str",
+            "optional": true
+        },
+        "reference": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_direct_debits": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing direct_debits",
+    "entity_name": "direct_debits",
+    "domain": [
+        "payment"
+    ],
+    "query_intent": true
+}

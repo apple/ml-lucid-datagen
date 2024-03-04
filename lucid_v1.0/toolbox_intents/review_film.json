@@ -1,0 +1,26 @@
+{
+    "command": "review_film",
+    "args": {
+        "film_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "rating": {
+            "type": "int",
+            "optional": true
+        },
+        "review_text": {
+            "type": "str",
+            "optional": true
+        },
+        "spoiler_alert": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "review film",
+    "entity_name": "reviews",
+    "domain": "television_and_film"
+}

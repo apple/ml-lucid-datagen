@@ -1,0 +1,34 @@
+{
+    "command": "add_payment_card",
+    "args": {
+        "card_number": {
+            "type": "str",
+            "optional": false
+        },
+        "expiration_date": {
+            "type": "str",
+            "optional": false
+        },
+        "cvv": {
+            "type": "str",
+            "optional": false
+        },
+        "cardholder_name": {
+            "type": "str",
+            "optional": false
+        },
+        "billing_address": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "phone_number": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "add payment card",
+    "entity_name": "payment_cards",
+    "domain": "payment"
+}

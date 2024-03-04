@@ -1,0 +1,36 @@
+{
+    "command": "book_swimming_lesson",
+    "args": {
+        "location": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "instructor": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "level": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book swimming lesson",
+    "entity_name": "lessons",
+    "domain": "exercise"
+}

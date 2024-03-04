@@ -1,0 +1,43 @@
+{
+    "command": "find_playlists",
+    "args": {
+        "playlist_name": {
+            "type": "str",
+            "optional": true
+        },
+        "playlist_description": {
+            "type": "str",
+            "optional": true
+        },
+        "playlist_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist_visibility": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist_genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "playlist_length": {
+            "type": "int",
+            "optional": true
+        },
+        "date_of_playlists": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing playlists",
+    "entity_name": "playlists",
+    "domain": [
+        "music_podcasts_and_audiobooks"
+    ],
+    "query_intent": true
+}

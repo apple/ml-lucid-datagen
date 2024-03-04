@@ -1,0 +1,35 @@
+{
+    "command": "find_hair_appointments",
+    "args": {
+        "stylist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "service_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "additional_notes": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_hair_appointments": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing hair_appointments",
+    "entity_name": "hair_appointments",
+    "domain": [
+        "health_hair_and_beauty"
+    ],
+    "query_intent": true
+}

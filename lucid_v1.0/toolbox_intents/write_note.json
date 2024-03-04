@@ -1,0 +1,21 @@
+{
+    "command": "write_note",
+    "args": {
+        "title": {
+            "type": "str",
+            "optional": false
+        },
+        "content": {
+            "type": "str",
+            "optional": true
+        },
+        "reminder": {
+            "type": "bool",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "write a note",
+    "entity_name": "notes",
+    "domain": "reminders_and_notes"
+}

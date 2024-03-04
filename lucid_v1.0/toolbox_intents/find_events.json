@@ -1,0 +1,29 @@
+{
+    "command": "find_events",
+    "args": {
+        "event_title": {
+            "type": "str",
+            "optional": true
+        },
+        "event_location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "event_description": {
+            "type": "str",
+            "optional": true
+        },
+        "date_of_events": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing events",
+    "entity_name": "events",
+    "domain": [
+        "calendar"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,22 @@
+{
+    "command": "add_to_favourites",
+    "args": {
+        "page_name": {
+            "type": "str",
+            "optional": false
+        },
+        "page_url": {
+            "type": "str",
+            "optional": false
+        },
+        "category": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "Add a page to favourites",
+    "entity_name": "favourite_pages",
+    "domain": "internet"
+}

@@ -1,0 +1,34 @@
+{
+    "command": "find_taxis",
+    "args": {
+        "destination": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "origin": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "passenger_count": {
+            "type": "int",
+            "optional": true
+        },
+        "luggage": {
+            "type": "bool",
+            "optional": true
+        },
+        "date_of_taxis": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing taxis",
+    "entity_name": "taxis",
+    "domain": [
+        "transportation"
+    ],
+    "query_intent": true
+}

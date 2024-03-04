@@ -1,0 +1,35 @@
+{
+    "command": "find_film_tickets",
+    "args": {
+        "film_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "theater_name": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "number_of_tickets": {
+            "type": "int",
+            "optional": true
+        },
+        "seat_preference": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "date_of_film_tickets": {
+            "type": "str",
+            "optional": false
+        }
+    },
+    "confirmation_required": false,
+    "description": "Query intent for finding existing film_tickets",
+    "entity_name": "film_tickets",
+    "domain": [
+        "television_and_film"
+    ],
+    "query_intent": true
+}

@@ -1,0 +1,36 @@
+{
+    "command": "book_hair_appointment",
+    "args": {
+        "date": {
+            "type": "str",
+            "optional": false
+        },
+        "time": {
+            "type": "str",
+            "optional": false
+        },
+        "stylist": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "service_type": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "location": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "additional_notes": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a hair appointment",
+    "entity_name": "hair_appointments",
+    "domain": "health_hair_and_beauty"
+}

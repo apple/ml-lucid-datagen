@@ -1,0 +1,35 @@
+{
+    "command": "book_spa_appointment",
+    "args": {
+        "spa_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "appointment_date": {
+            "type": "str",
+            "optional": false
+        },
+        "appointment_time": {
+            "type": "str",
+            "optional": false
+        },
+        "service_type": {
+            "type": "str",
+            "optional": true
+        },
+        "therapist_gender": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "special_requests": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "book a spa appointment",
+    "entity_name": "appointments",
+    "domain": "health_hair_and_beauty"
+}

@@ -1,0 +1,41 @@
+{
+    "command": "play_film",
+    "args": {
+        "film_title": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "streaming_service": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "actor": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "genre": {
+            "type": "str",
+            "optional": true,
+            "disambiguation": true
+        },
+        "release_year": {
+            "type": "int",
+            "optional": true
+        },
+        "duration": {
+            "type": "int",
+            "optional": true
+        },
+        "language": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "play film on streaming service",
+    "entity_name": "films",
+    "domain": "television_and_film"
+}

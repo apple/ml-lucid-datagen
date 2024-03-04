@@ -1,0 +1,14 @@
+{
+    "command": "add_artist_to_favorites",
+    "args": {
+        "artist_name": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "add artist to favorites",
+    "entity_name": "favorites",
+    "domain": "music_podcasts_and_audiobooks"
+}

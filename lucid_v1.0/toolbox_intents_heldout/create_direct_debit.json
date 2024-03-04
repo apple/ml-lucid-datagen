@@ -1,0 +1,34 @@
+{
+    "command": "create_direct_debit",
+    "args": {
+        "amount": {
+            "type": "str",
+            "optional": false
+        },
+        "recipient": {
+            "type": "str",
+            "optional": false,
+            "disambiguation": true
+        },
+        "bank_account": {
+            "type": "str",
+            "optional": false
+        },
+        "reference": {
+            "type": "str",
+            "optional": true
+        },
+        "start_date": {
+            "type": "str",
+            "optional": true
+        },
+        "end_date": {
+            "type": "str",
+            "optional": true
+        }
+    },
+    "confirmation_required": true,
+    "description": "create direct debit",
+    "entity_name": "direct_debits",
+    "domain": "payment"
+}
